@@ -9,9 +9,30 @@
 
     <title>JQuery Movie App</title>
 </head>
-<body>
-    <h1>hell</h1>
+<body class='black'>
+    <nav class="purple">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Movie Info</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
+
+
+<div class="container center">
+<h3 class='white-text'>Movie Info App</h3>
+<p class="grey-text lighten-3">Search for any movie</p>
+<form id='searchForm'>
+<input type="text" id='searchUser' placeholder="Search here" class='white-text'>
+</form>
+<br>
+</div>
+
+<div class="container">
+    <div id="movies" class='row'></div>
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
